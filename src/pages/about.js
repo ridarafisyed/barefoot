@@ -8,6 +8,7 @@ export default function Home() {
     <Layout>
       <Header />
       <Products />
+      <h1>About us page</h1>
     </Layout>
   )
 }
