@@ -1,0 +1,39 @@
+.jumbotron {
+  background-color: transparent;
+}
+.header_container {
+  background-image: url("../images/back_image.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.display1 {
+  padding-top: 12vw;
+  font-weight: 100;
+  padding-left: 1vw;
+  color: gold;
+}
+.left-side {
+  width: auto;
+  height: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover-image {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+.heading {
+  color: gold;
+  text-align: center;
+  font-weight: 100;
+  padding: 30px 0;
+}

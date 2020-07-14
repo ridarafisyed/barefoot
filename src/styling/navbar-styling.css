@@ -1,0 +1,47 @@
+/* styleing for navigation bar */
+:root {
+  --yellowShade: #fee715ff;
+  --blackShade: #101820ff;
+  --whiteShade: #fff;
+  --pureBlack: #000;
+}
+
+.navbar {
+  padding-bottom: 2em;
+}
+.navbar .navbar-brand {
+  color: var(--blackShade);
+}
+
+/* .navbar .navbar-brand:hover {
+  border-bottom: solid 5px var(--yellowShade);
+} */
+.navbar .nav-link {
+  color: black;
+}
+.navbar .nav-link:hover {
+  color: gold;
+  border-bottom: solid 5px var(--yellowShade);
+}
+.navbar-toggler {
+  color: var(--pureBlack);
+}
+.navbar-toggler-icon {
+  color: var(--pureBlack);
+}
+.navbar-nav {
+  font-size: 1em;
+}
+.navbar i {
+  color: gold;
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@keyframes converter {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
