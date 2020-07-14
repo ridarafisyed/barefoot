@@ -20,7 +20,7 @@
     "@wellyshen/use-web-animations": "^0.4.1",
     "acorn": "^6.0.0",
     "bufferutil": "^4.0.1",
-    "eslint": "^3.19.0",
+    "eslint": "^4.18.2",
     "gatsby": "^2.23.12",
     "gatsby-image": "^2.4.13",
     "gatsby-plugin-sharp": "^2.6.19",
