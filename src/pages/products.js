@@ -4,6 +4,8 @@ import { graphql } from "gatsby"
 import { Link } from "gatsby"
 import Grid from "@material-ui/core/Grid"
 
+import ProductList from "../components/productsList"
+
 import styled from "../styling/main.module.css"
 
 const products = () => {
