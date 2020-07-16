@@ -3,14 +3,12 @@
   background-color: gold;
 }
 .paper {
-  /* background-color: gold; */
   background-color: transparent;
   padding: 5vw;
   width: 100%;
   height: 100%;
 }
 .main_card {
-  /* box-shadow: 3px 4px #ddd; */
   position: relative;
   margin: 2vw;
   justify-content: center;
@@ -39,16 +37,7 @@
 .main_card:hover::after {
   transform: rotateY(360deg);
 }
-.image_container {
-  position: relative;
-  width: 15vw;
-  height: 15vh;
-}
-/* .main_card img {
-  display: block;
-  width: 100%;
-  height: auto;
-} */
+
 .overlay {
   position: absolute;
   bottom: 0;
@@ -81,39 +70,47 @@
 }
 
 h3 {
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
 }
 .main_card a {
   color: gold;
 }
 .card {
   box-shadow: 3px 4px #ddd;
+  padding-top: 1.5rem;
   margin: 2vw;
   width: 100%;
-  height: 50vh;
+  height: 60vh;
 }
-.cardimage {
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  width: 100%;
-  height: auto;
-  z-index: 1;
+
+.image_container {
   position: relative;
+  padding-top: 2rem;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  overflow: hidden;
+  display: flex;
+  width: 20vw;
+  height: 20vh;
 }
-.cardimage img {
-  width: 100%;
-  height: auto;
+
+.cardimage {
+  display: flexbox;
+  max-width: 100%;
+  max-height: 100%;
 }
+
 .cardLink {
   position: relative;
   justify-content: center;
   text-align: center;
   align-content: center;
-  bottom: 0.5rem;
+  padding: 2rem;
 }
 .cardLink a {
   background-color: transparent;
+
   padding: 0.5rem;
 }
 .cardLink a:nth-child(1) {
@@ -138,9 +135,9 @@ h3 {
 }
 
 .cardTitle {
-  padding: 2rem;
+  padding: 1rem;
   color: black;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 100;
   text-align: center;
   text-transform: capitalize;

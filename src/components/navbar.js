@@ -20,17 +20,28 @@ export default function NavBar() {
       {
         id: 2,
         path: "/products",
-        text: "products",
+        text: "new arrival",
       },
       {
         id: 3,
-        path: "/about",
-        text: "about",
+        path: "/products",
+        text: "eid collection",
       },
       {
         id: 4,
-        path: "/contact",
-        text: "contact",
+        path: "/products",
+        text: "women",
+      },
+      {
+        id: 5,
+        path: "/products",
+        text: "men",
+      },
+
+      {
+        id: 6,
+        path: "/products",
+        text: "kids",
       },
     ],
   })
@@ -63,13 +74,13 @@ export default function NavBar() {
       <Link to="/" className="navbar-brand">
         <img src={logo} width="170" height="55" alt="logo" loading="lazy" />
       </Link>
-      <a
+      <button
         className="navbar-toggler hamburger"
         type="button"
         onClick={navbarHandler}
       >
         <i className="fas fa-bars"></i>
-      </a>
+      </button>
       <div className={state.css}>
         <ul className="navbar-nav">
           {state.links.map(link => {
@@ -82,8 +93,8 @@ export default function NavBar() {
             )
           })}
           <li className="nav-item ">
-            <Link className="nav-link cart-icon">
-              <i class="fa fa-shopping-bag"></i>
+            <Link className="nav-link cart-icon" to="/">
+              <i className="fas fa-shopping-bag"></i>
             </Link>
           </li>
         </ul>

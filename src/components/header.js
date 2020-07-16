@@ -9,7 +9,7 @@ export default function Header() {
     <div className=" jumbotron jumbotron-fluid header_container">
       <Grid container spacing={3}>
         <Grid item xs={6} className="left-side">
-          <img src={backImage} className="cover-image" />
+          <img src={backImage} alt="hanging shoes " className="cover-image" />
         </Grid>
         <Grid item xs={6} className="right-side">
           <h1 className="display1 text-center">Comfortable & Cool</h1>

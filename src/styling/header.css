@@ -1,5 +1,6 @@
 .jumbotron {
   background-color: transparent;
+  /* background-image: radial-gradien(#000, #333, #666); */
 }
 .header_container {
   background-image: url("../images/back_image.svg");

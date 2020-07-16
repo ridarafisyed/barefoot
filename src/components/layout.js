@@ -10,6 +10,7 @@ export default function Layout({ children }) {
     <div className="container">
       <NavBar />
       <main>{children}</main>
+
       <Footer />
     </div>
   )

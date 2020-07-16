@@ -1,45 +1,39 @@
 import React from "react"
-import { graphql } from "gatsby"
-import Image from "gatsby-image"
 
 import Layout from "../components/layout"
 
-const productTemplate = ({
-  data: {
-    contentfulProducts: {
-      title,
-      price,
-      imageCover: { fixed },
-      description: { description },
-    },
-  },
-}) => {
+import "../styling/detail.css"
+
+export default props => {
+  const { pageContext } = props
+  const { title, image_full, price, info } = pageContext
   return (
     <Layout>
-      <h2>{title}</h2>
-      <Image fixed={fixed} alt={title} />
-      <h4>Rs : {price}</h4>
-      <p>{description}</p>
-      <button>Add to Cart</button>
+      <div className="container">
+        <div className="row">
+          <div className="col-sm">
+            <img
+              src={image_full}
+              alt={pageContext.name}
+              className="img-fluid max-width: 100%"
+            />
+            <br />
+            <br />
+            <span>Size Available : </span>
+            <button className="btn btn-outline-dark">S</button>
+            <button className="btn btn-outline-dark">M</button>
+            <button className="btn btn-outline-dark">L</button>
+            <button className="btn btn-outline-dark">XL</button>
+          </div>
+
+          <div className="col-sm">
+            <h2>{title}</h2>
+            <h4>Rs : {price}</h4>
+            <p>{info}</p>
+            <button className="btn btn-warning">Add to Cart</button>
+          </div>
+        </div>
+      </div>
     </Layout>
   )
 }
-
-export const query = graphql`
-  query GetSingleProduct($slug: String) {
-    contentfulProducts(slug: { eq: $slug }) {
-      title
-      price
-      imageCover {
-        fixed(width: 400) {
-          ...GatsbyContentfulFixed
-        }
-      }
-      description {
-        description
-      }
-    }
-  }
-`
-
-export default productTemplate

@@ -25,30 +25,7 @@ h1 {
   justify-content: center;
   position: relative;
 }
-/* h1::before {
-  content: "";
-  height: 100%;
-  left: 20vw;
-  right: 20vw;
 
-  display: block;
-  background-color: white;
-  position: absolute;
-  z-index: -1;
-}
-h1::after {
-  content: "";
-  height: 100%;
-  top: 0;
-  width: 101vw;
-  display: block;
-
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: gold;
-  position: absolute;
-  z-index: -2;
-} */
 /* On screens that are 992px wide or less, the background color is blue */
 @media screen and (max-width: 992px) {
   h1 {
